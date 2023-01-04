@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class enemy : MonoBehaviour
 {
@@ -35,6 +36,13 @@ public class enemy : MonoBehaviour
         {
             agent.destination = agent.transform.position;
         }
-        
+    }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }
