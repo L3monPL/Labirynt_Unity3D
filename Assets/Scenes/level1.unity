@@ -1513,7 +1513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1043051247}
-  distanceEnemyToPlayer: 5
+  distanceEnemyToPlayer: 3.5
 --- !u!195 &519045115
 NavMeshAgent:
   m_ObjectHideFlags: 0
